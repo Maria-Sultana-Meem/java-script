@@ -22,3 +22,4 @@ var personInfo = {
 console.log(personInfo)
 console.log(personInfo.House)
 
+
