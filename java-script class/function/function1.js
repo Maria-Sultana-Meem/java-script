@@ -28,7 +28,7 @@
 
 
 
-//    ......ternary operator.....
+//     ......ternary operator.....
 
 /*
 let myAge = 20;
@@ -45,6 +45,43 @@ else{
 // :
 
 // condition ? true value (if) : false value (else)
+     /*
        let myAge = 17
 myAge>=18 ? console.log('you can vote') : console.log('You are not eligible');
+
+*/
+
+// let price = 500;
+// let isToy = true;
+//   price = isToy === true? 0 : 500 + 200 ;
+
+//   console.log(price)
+/*
+let price = 500;
+let isToy = false;
+  price = isToy === true? 0 : 500 + 200 ;
+
+  console.log(price)
+  */
+
+  /*
+  let number =20;
+   let result =number%2==0? 'even' : 'odd';
+   console.log(result)
+   */
+
+
+//      global scope   
+   /*function myName () {
+        let firstName='Maria'
+        console.log(firstName)
+   }
+   myName()*/
+
+      let firstName = 'Meem'
+   function myName () {
+         let firstName='Maria'
+        console.log(firstName)
+   }
+   myName()
 
