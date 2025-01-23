@@ -77,11 +77,103 @@ let isToy = false;
         console.log(firstName)
    }
    myName()*/
-
+      /*
       let firstName = 'Meem'
    function myName () {
          let firstName='Maria'
         console.log(firstName)
    }
-   myName()
+   myName() */ 
+   /*
+   function sum () {
+          let num1 = 10;
+          let num2 = 20;
+          console.log(num1+num2)
+   }
+    sum ()
+         let firstName = 'Maria'
+        let  lastName = 'monirul'
+    function printName (){
+        // let firstName = 'Maria'
+        // let lastName = 'Meem'
+        console.log(firstName +'  '+lastName)
+          lastName = 'sultana'
+          console.log(firstName +'  '+lastName)
+
+
+    }
+
+    printName()
+    */
+     /*
+    function meal () {
+        console.log('Dim baji')
+        console.log('Dim buna')
+        console.log('Vat')
+        console.log('............')
+    }
+       meal() */
+
+
+//        argument-parameter
+
+
+         /*
+       function multiply(result){
+       let finalResult = result*result;
+       console.log(finalResult);
+
+       }
+
+       multiply(5)
+       multiply(10)
+       multiply(15)*/
+       /*
+       function calculation (num1,num2){
+        const sum = num1+num2;
+        console.log(sum)
+
+       }
+      calculation(2,5)
+      calculation(67978865,8753323)*/
+      /*
+       function math(num1,num2,num3){
+        const multiply=num1*num2*num3;
+        console.log(multiply)
+
+       }
+       math(4,5,6)
+       function math(num1,num2,num3){
+        const multiply=num1/num2/num3;
+        console.log(multiply)
+
+       }
+       math(500,27,45)*/
+        /*
+       function sum(a,b,c,d,e){
+        const result = a+b+c+d+e;
+        console.log(result)
+       }
+       sum(1,2,3,4,5,6,7,8,9)
+       */
+
+        /*
+       let  students = 'Web Developer';
+       let learner = 'web developer';
+       if ( students.toUpperCase===learner.toUpperCase) {
+           console.log('we are web developer')
+       }
+       else{
+        console.log('we are not web developer')
+       } */
+
+
+       
+
+
+       
+
+
+
+
 
