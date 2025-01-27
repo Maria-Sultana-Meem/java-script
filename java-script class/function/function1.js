@@ -157,15 +157,21 @@ let isToy = false;
        sum(1,2,3,4,5,6,7,8,9)
        */
 
-        /*
-       let  students = 'Web Developer';
-       let learner = 'web developer';
-       if ( students.toUpperCase===learner.toUpperCase) {
-           console.log('we are web developer')
-       }
-       else{
-        console.log('we are not web developer')
-       } */
+        
+       let  students = 'Web   Developer';
+       let stn = ['maria','sultana','meem']
+       console.log(students.length)
+         console.log(stn.length)
+         console.log(stn.indexOf('meem'))
+         console.log(stn[2])
+
+      //  let learner = 'web developer';
+      //  if ( students.toUpperCase===learner.toUpperCase) {
+      //      console.log('we are web developer')
+      //  }
+      //  else{
+      //   console.log('we are not web developer')
+      //  } */
 
 
        
