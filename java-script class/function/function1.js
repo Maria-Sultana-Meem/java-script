@@ -94,8 +94,8 @@ let isToy = false;
          let firstName = 'Maria'
         let  lastName = 'monirul'
     function printName (){
-        // let firstName = 'Maria'
-        // let lastName = 'Meem'
+         let firstName = 'Maria'
+         let lastName = 'Meem'
         console.log(firstName +'  '+lastName)
           lastName = 'sultana'
           console.log(firstName +'  '+lastName)
@@ -157,13 +157,13 @@ let isToy = false;
        sum(1,2,3,4,5,6,7,8,9)
        */
 
-        
+        /*
        let  students = 'Web   Developer';
        let stn = ['maria','sultana','meem']
        console.log(students.length)
          console.log(stn.length)
          console.log(stn.indexOf('meem'))
-         console.log(stn[2])
+         console.log(stn[2])*/
 
       //  let learner = 'web developer';
       //  if ( students.toUpperCase===learner.toUpperCase) {
