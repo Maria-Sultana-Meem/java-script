@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p onmouseover="this.style.color='red'">on mouse over</p> 
+    <h1 id="title">we are learning dom</h1>
+    <h2 id="h2">we are programmer</h2>
+
+
+   <ul id="lists">
+
+    <li>Murgi</li>
+    <li>Dim</li>
+    <li>Noodles</li>
+   </ul>
+
+<script>
+
+let heading=document.getElementById('title')
+heading.innerText='we learn html,css,js'
+heading.style.color='red'
+heading.style.backgroundColor='green'
+console.log(heading);
+
+
+let heading2=document.getElementById('h2').style.color='blue'
+console.log(heading2);
+
+
+ let newHeading=document.createElement('h3')
+ newHeading.innerText='this is another heading'
+ document.body.appendChild(newHeading)
+ console.log(newHeading);
+ 
+
+ let list=document.createElement('li')
+ list.innerText='Pasta'
+ document.getElementById('lists').appendChild(list)
+
+
+</script>
+
+</body>
+</html>

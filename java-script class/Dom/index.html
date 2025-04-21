@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1 id="h1">We are learning Dom</h1> 
+  <h2>We are learning Dom</h2> 
+  
+  
+  <li id="li">Meem</li>
+  <li id="list">Maria</li>
+  <li>Sultana</li>
+  <li>Manha</li>
+  <li>Sultana</li>
+  <li>Manha</li>
+  <li>Sultana</li>
+  <li>Manha</li>
+  <li>Sultana</li>
+  <li>Manha</li>
+
+  <button onclick="windowObj()">click</button>
+  <button onclick="alert('click')">click</button>
+  <button onclick="confirm('close')">click</button>
+  <button onclick="winObj()">click</button>
+  <button onclick="winOb()">click</button>
+  <button onclick="winO()">click</button>
+  <button onclick="setTimeout(function (){alert('come after 3s')},3000)">click</button>
+  <button onclick="setTimeout(time,3000)">click</button>
+  <button onclick="setInterval(time,3000)">click</button>
+  <input onchange="console.log('change')" type="text">
+  <input onkeyup="console.log('change')" type="text">
+  <input onkeydown="console.log('change')" type="text">
+
+
+<script>
+//  const heading= document.getElementById('head').innerText="javaScript"
+ 
+//  console.log(heading);
+//  const abc=document.querySelector('.nothing').innerText
+//  console.log(abc);
+
+ //let getData= document.getElementsByTagName('h2')
+ //console.log(getData);
+ 
+let className=document.getElementById('h1').innerText
+console.log(className);
+let listName=document.getElementById('li').innerText
+console.log(listName);
+let listName2=document.querySelector('#list').innerText
+console.log(listName2);
+
+let getData=document.querySelectorAll('li')
+for (const element of getData) {
+  console.log(element.innerText);
+}
+
+
+function windowObj(sms){
+alert('Click Done')
+
+}
+function winObj(sms){
+prompt('enter your name')
+
+}
+function winOb(sms){
+open()
+
+}
+function winO(sms){
+close()
+
+}
+function time (){
+  alert('come after 3s')
+
+}
+function time (){
+  document.write('come after 3s <br> ')
+
+}
+</script>
+
+</body>
+</html>

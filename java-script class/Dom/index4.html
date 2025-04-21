@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h2 class="toggleText">ON</h2>
+    <button id="btn" onclick="toggle()" >Switch</button>
+    
+
+    <form onsubmit="login(event)" action="">
+        <label for="">UserName:</label>
+        <input id="name" type="text"> <br> <br>
+        <label for="">Password:</label>
+        <input id="pass" type="password"> <br> <br>
+        <button type="submit"> Submit</button>
+    </form>
+    <h1 id="displayName"></h1>
+    <h2 id="DisplayPass"></h2>
+
+
+<script>
+
+function toggle(){
+    const text=  document.getElementsByClassName('toggleText');
+    text[0].textContent=text[0].textContent==='ON'?'OFF':'ON'
+    text.style.backgroundColor='Red'
+    text.style.color='white'
+
+}
+
+
+const login= (event)=>{
+    event.preventDefault()
+    const UserName= document.querySelector('#name');
+    const password= document.querySelector('#pass').value;
+    const display= document.querySelector('#displayName');
+    const userPass= document.querySelector('#DisplayPass')
+    const getName=UserName.value
+    displayName.textContent=getName
+    userPass.textContent=password
+}
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

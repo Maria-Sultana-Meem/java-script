@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1 id="toggleText">ON</h1>
+<button onclick="toggleTask()">Switch</button>
+
+<h2 id="toggle">ON</h2>
+ <button onclick="task()">Switch</button>
+
+ <h2 id="toggl">ON</h2>
+ <button id="btn" >Switch</button>
+
+
+
+
+<script>
+
+function toggleTask(){
+const text= document.querySelector('#toggleText')
+if(text.textContent==='ON'){
+    text.textContent='OFF'
+}
+else{
+    text.textContent='ON'
+}
+}
+
+
+const task=()=>{
+        const text=document.getElementById('toggle')
+      const result= text.innerText==='ON'? "OFF":"ON"
+      text.innerText=result;
+      
+    }
+
+    const text=document.getElementById('toggl')
+        const button= document.getElementById('btn')
+    const tas=()=>{
+      const result= text.innerText==='ON'? "OFF":"ON"
+      text.innerText=result;
+    }
+         button.addEventListener("click", tas)
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
