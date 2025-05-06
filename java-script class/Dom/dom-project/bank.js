@@ -1,8 +1,8 @@
-document.getElementById('btn').addEventListener('click',()=>{
-   const accountNo= document.getElementById('account').value
-   const pinNo= document.getElementById('pin').value
+document.getElementById('loginBtn').addEventListener('click',()=>{
+   const accountNumber= document.getElementById('accountNumber').value
+   const pinNumber= document.getElementById('pinNumber').value
 
-   if(accountNo==='01521777639' && pinNo==='77639') {
+   if(accountNumber==='01521777639' && pinNumber==='77639') {
      window.location.href='./home.html'
     
     

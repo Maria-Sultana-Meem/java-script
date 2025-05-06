@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,54 +9,73 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <section class="flex justify-center ">
-        <div class="mockup-phone border-primary ">
-            <div class="mockup-phone-camera"></div>
-            <div class="mockup-phone-display bg-white">
-                <div class="flex justify-center items-center mt-16">
-                    <div class="stats shadow">
-                        <div class="stat">
-                          <div class="stat-title">Balance</div>
-                          <div class="stat-value">89,400</div>
-                          
-                        </div>
-                      </div>
-                </div>
-                <div class="ml-5 mt-5">
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Add Money</button>
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Cash Out</button>
-                </div>
+    
+  <main class="flex justify-center ">
+    <div class="mockup-phone border-primary">
+      <div class="mockup-phone-camera"></div>
+      <div class="mockup-phone-display bg-slate-50">
+        <div class="flex mt-20 justify-center">
+          <div class="flex justify-center mt-5">
+            <div class="stats shadow">
+              <div class="stat">
+                <div class="stat-title">Balance</div>
+                <div id="balance" class="stat-value">89400</div>
                 
-                <div class="hero bg-base-200 min-h-screen">
-                    
-                      <div class="card bg-base-100 w-2/3 max-w-sm shrink-0 shadow-2xl">
-                        <div class="card-body">
-                          <fieldset class="fieldset">
-                            <label class="label">Account</label>
-                            <input type="number" class="input" placeholder="Type your account No" />
-                            <label class="label">Pin</label>
-                            <input type="password" class="input" placeholder="Type yout Pin No" />
-                            
-                            <button class="btn btn-neutral mt-4">Submit</button>
-                          </fieldset>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-
+              </div>
             </div>
           </div>
-    </section>
-      
+          
+        </div>
+        <div class="flex justify-center gap-5 mt-10">
+          <button id="depositBtn" class="btn btn-accent">Deposit</button>
+          <button id="cashoutBtn" class="btn btn-accent">Cash-out</button>
+        </div>
+       <!-- ............deposit section.......... -->
+        <div id="depositSection" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-16">
+          <div class="card-body">
+            <fieldset class="fieldset">
+              <label class="label">Deposit Amount</label>
+              <input id="depositAmount" type="text" class="input" placeholder="Enter Amount" />
+              <label  class="label">Pin</label>
+              <input id="depositPin" type="password" class="input" placeholder="Enter Pin" />
+              <div><a class="link link-hover">Forgot password?</a></div>
+              <button id="depoBtn" class="btn btn-neutral mt-4">Deposit</button>
+            </fieldset>
+          </div>
+        </div>
+
+
+<!-- ...................cash-out section......... -->
+
+<div id="cashOutSection" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-16 hidden">
+  <div class="card-body">
+    <fieldset class="fieldset">
+      <label class="label">Cash-Out Amount</label>
+      <input id="cashoutAmount" type="text" class="input" placeholder="Enter Amount" />
+      <label  class="label">Pin</label>
+      <input id="cashoutPin" type="password" class="input" placeholder="Enter Pin" />
+      <div><a class="link link-hover">Forgot password?</a></div>
+      <button id="cashBtn" class="btn btn-neutral mt-4">Cash-Out</button>
+    </fieldset>
+  </div>
+</div>
+
+
+
+      </div>
+    </div>
 
 
 
 
+  </main>
 
 
-
-
-
+<script src="./cashOut.js"></script>
+<script src="./deposit.js"></script>
+<script src="./home.js"></script>
+<script src="./bank.js"></script>
+</body>
+</html> 
 </body>
 </html>
