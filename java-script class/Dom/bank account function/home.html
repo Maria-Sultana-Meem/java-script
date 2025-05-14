@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    
+  <main class="flex justify-center ">
+    <div class="mockup-phone border-primary">
+      <div class="mockup-phone-camera"></div>
+      <div class="mockup-phone-display bg-slate-50">
+        <div class="flex mt-20 justify-center">
+         
+          <div>
+            <div class="stats shadow ">
+              <div class="stat bg-pink-500">
+                <div class="stat-title text-white text-lg">Total Balance</div>
+                <div id="balance" class="stat-value text-white">89400</div>
+                
+              </div>
+            </div>
+          </div>
+             
+        </div>
+        <div class="flex justify-center gap-2 mt-10">
+          <button id="depo" class="btn btn-accent">Deposit</button>
+          <button id="cash" class="btn btn-accent">CashOut</button>
+          <button id="trans" class="btn btn-accent">Transaction</button>
+
+         </div>
+             <!-- .......deposit section............  -->
+
+        <div id="depositSection" class="card  bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-16">
+          <div class="card-body">
+            <fieldset class="fieldset">
+              <label class="label text-2xl">Deposit</label>
+              <input id="inputDepositAmount" type="text" class="input" placeholder="Enter Deposit Amount" />
+              <label  class="label text-2xl">Pin</label>
+              <input id="inputDepositpinNumber" type="password" class="input" placeholder="Enter Pin No" />
+              <div><a class="link link-hover">Forgot password?</a></div>
+              <button id="depositBtn" onclick="my_modal_3.showModal()" class="btn btn-primary mt-4">Deposit</button>
+            </fieldset>
+          </div>
+        </div>
+
+       <!-- ..........cashout section...............  -->
+
+       <div id="cashOutSection" class="card hidden bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-16">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-lg">Cash-Out</label>
+            <input id="inputCashAmount" type="text" class="input" placeholder="Enter Cash-Out Amount" />
+            <label  class="label text-lg">Pin</label>
+            <input id="inputCashpinNumber" type="password" class="input" placeholder="Enter Pin No" />
+           
+            <button  id="cashOutBtn" onclick="my_modal_1.showModal()" class="btn btn-primary mt-4" >CashOut</button>
+          </fieldset>
+        </div>
+      </div>
+
+<!-- ...................transection.............  -->
+
+<div id="transactionSection" class="hidden">
+  <h1 class="text-3xl font-bold text-red-300 mt-10 text-center">Transaction History</h1>
+</div>
+
+<!-- ...............modal..........  -->
+
+<!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <p class="py-4">Taka succesfully cashout</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!-- modal-2..........  -->
+
+
+
+<!-- You can open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <p class="py-4">Taka succesfully Deposit</p>
+  </div>
+</dialog>
+
+
+
+      </div>
+    </div>
+
+
+
+
+  </main>
+  <script src="./js/features.js"></script>
+  <script src="./js/cashout.js"></script>
+<script src="./js/deposit.js"></script>
+<script src="./js/utilities.js"></script>
+
+
+</body>
+</html> 
+</body>
+</html>
