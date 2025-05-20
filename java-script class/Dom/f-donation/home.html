@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Donation</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+  .button{
+    background-color: #B4F461;
+  }
+  
+</style>
+</head>
+<body>
+    
+   <header class="fixed w-full top-0 left-0 bg-white">
+    
+<!-- ..............navbar start...........  -->
+
+<div class="navbar bg-rose-50 shadow-sm h-20 flex justify-evenly">
+    <div class="navbar-start">
+      
+
+      <a  onclick="page('./index.html')" onclick="page('./index.html')" class="btn button text-xl ml-20">Home</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        
+        <div class="flex justify-center gap-5"> 
+          <img class="size-8" src="./images/1.png" alt="">
+          <h1 class="text-xl font-bold">Donate Bangladesh</h1>
+
+
+        </div>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <a class="btn bg-gray-100 mr-20">
+        <img src="./images/2.png" alt="">
+        <h1><span>5500</span>BDT</h1>
+      </a>
+    </div>
+  </div>
+<!-- ................navbar end...................  -->
+
+<!-- ..........donation and history btn............  -->
+
+ <div class="mt-10 flex justify-center gap-5">
+
+      <button id="donationBtn" class="button btn">Donation</button>
+      <button id="historyBtn" class="btn">History</button>
+     </div>
+
+</header>
+
+
+<main>
+
+   <div class="md:w-1/2 space-y-5 mt-52 mx-auto">
+                    <div class="collapse collapse-arrow bg-base-200">
+                      <input type="radio" name="my-accordion-2" checked="checked" />
+                      <div class="collapse-title text-xl font-medium"> Donate for Flood at Noakhali,Bangladesh </div>
+                      <div class="collapse-content">
+                        <p>..........</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                      <input type="radio" name="my-accordion-2" />
+                      <div class="collapse-title text-xl font-medium"> 
+                        Donate for Flood Relief in Feni,Bangladesh
+                        </div>
+                      <div class="collapse-content">
+                        <p>...........</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                      <input type="radio" name="my-accordion-2" />
+                      <div class="collapse-title text-xl font-medium">Aid for Injured in the Quato Movement </div>
+                      <div class="collapse-content">
+                        <p>......</p>
+                      </div>
+                    </div>
+                    
+                   </div>
+                </div>
+              </div>
+  
+</main>
+
+
+
+
+
+
+
+
+
+<script src="./js/utilities.js"></script>
+</body>
+</html>

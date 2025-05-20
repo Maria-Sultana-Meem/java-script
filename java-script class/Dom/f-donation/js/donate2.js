@@ -10,15 +10,18 @@ document.getElementById('donateBtn2').addEventListener('click',()=>{
     document.getElementById('mainAmount').innerText=mainAmount-donateAmountInput2;
 
     fieldclear('donateInput2')
+
+    document.getElementById('toast').classList.remove('hidden')
+ document.getElementById('mainSection').classList.add('hidden')
  
     
     const createHistoryDiv=document.createElement('div')
-createHistoryDiv.classList.add('bg-gray-200')
-createHistoryDiv.classList.add('text-center')
-//createHistoryDiv.classList.add('w-6/12 mx-auto')
 createHistoryDiv.classList.add('w-6/12')
 createHistoryDiv.classList.add('mx-auto')
-createHistoryDiv.classList.add('mt-10')
+createHistoryDiv.classList.add('mt-5')
+createHistoryDiv.classList.add('p-5')
+createHistoryDiv.classList.add('border')
+createHistoryDiv.classList.add('rounded-lg')
 createHistoryDiv.innerHTML=`
 <h1 class='Text-2xl font-semibold'>Donate</h1>
 <p> ${donateAmountInput2} Taka is Donated for flood relief in Feni,Bangladesh
@@ -31,4 +34,10 @@ else{
     alert('invalid taka')
 }
 
+})
+
+document.getElementById('closeBtn').addEventListener('click',()=>{
+
+    document.getElementById('mainSection').classList.remove('hidden')
+    document.getElementById('toast').classList.add('hidden')
 })
